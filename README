@@ -1,0 +1,22 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3741
+
+
+`kiwi.vim` is a plugin for working with the [Kiwi](http://kiwi-lib.org/)
+library for behavior-driven development.  Right now, it simply adds
+smart folding, but I have some abbreviations which I'll add once I
+hammer out some pretty ugly kinks.
+
+Which Files Are Kiwi?
+---------------------
+
+To keep things simple, I just match anything that matches `*Spec.m`
+or `*Spec.mm`.  You can add your own `autocmd` rules to if you use
+a different naming convention.
+
+Folding
+-------
+
+Folding is designed to make the Kiwi specs readable as specs at a glance,
+hiding the backing code until you want to look at it.  In addition,
+it still allows adding manual fold markers (e.g. {{{1 and }}}) so that
+you can fold any supporting code in the file.
